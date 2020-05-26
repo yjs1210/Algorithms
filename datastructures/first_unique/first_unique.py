@@ -18,8 +18,6 @@ class FirstUnique:
             node.left = curr_tail
             self.tail = node
             
-        
-        
     def __remove(self, val):
         node = self.mapper[val] 
         if node.removed == True:
