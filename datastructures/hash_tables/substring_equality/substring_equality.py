@@ -14,8 +14,8 @@ class Solver:
 
 	def compute_H(self, m):
 		h = [0]*(self.n)
-		for i in range(1, self.n):
-			h[i] = (self.x * h[i-1] + ord(self.s[i])) % m
+		for i in range(1, self.n + 1):
+			h[i] = (self.x * h[i-1] + ord(self.s[i-1])) % m
 		return h
 
 	def identity(self, h, x, a, l):
